@@ -50,7 +50,7 @@ global.signin = async () => {
   const cookie = response.get("Set-Cookie");
 
   if (!cookie) {
-    throw new Error("Failed to get cookie from response");
+    throw new Error("Failed to get cookie from responses");
   }
   return cookie;
 };
